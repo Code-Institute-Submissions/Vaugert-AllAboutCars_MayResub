@@ -55,84 +55,138 @@ const questions= [
    
     
     question: "Which of the following is NOT a Russian car manufacturer?",
-    "correct_answer": "BYD",
-    "incorrect_answers": ["Silant", "Dragon", "GAZ"]
+    answers: [
+    {text: "BYD", correct:true},
+    {text: "Silant", correct:false },
+    {text:"Dragon", correct:false}
+    {text:"GAZ" , correct:false},
+    ]
 }, {
     
     question: "Which of the following countries has officially banned the civilian use of dash cams in cars?",
-    "correct_answer": "Austria",
-    "incorrect_answers": ["United States", "Czechia", "South Korea"]
+    answers: [
+    {text: "Austria",correct:true},
+    {text: "United States", correct:false}, 
+    {text:"Czechia", correct:false },
+    {text: "South Korea", correct:false },
+    ]
 }, {
    
     question: "The difference between the lengths of a Boeing 777-300ER and an Airbus A350-1000 is closest to:",
-    "correct_answer": "0.1m",
-    "incorrect_answers": ["1m", "10m ", "100m"]
+    answers: [
+    {text: "0.1m", correct:true},
+    {text: "10m ", correct:false} ,
+    {text: "1m", correct:false},
+    {text: "100m", correct:false},
+    ]
 }, {
     
     question: "When was Tesla founded?",
-    "correct_answer": "2003",
-    "incorrect_answers": ["2008", "2005", "2007"]
+    answers: [
+    {text: "2003", correct:true},
+    {text: "2005", correct:false}, 
+    {text: "2008", correct:false},
+    {text: "2007", correct:false},
+    ]
 }, {
    
     
     question: "Which one of these chassis codes are used by BMW 3-series?",
-    "correct_answer": "E46",
-    "incorrect_answers": ["E39", "E85", "F10"]
+    answers: [
+    {text:"E46", correct:true}, 
+    {text:"E39", correct:false},
+    {text:"E85", correct:false},
+    {text:"F10", correct:false},
+    ]
 }, {
     
     question: "Which car is the first mass-produced hybrid vehicle?",
-    "correct_answer": "Toyota Prius",
-    "incorrect_answers": ["Chevrolet Volt", "Honda Fit", "Peugeot 308 R HYbrid"]
+    answers: [
+    {text:"Toyota Prius", correct:true},
+    {text: "Chevrolet Volt", correct:false}, 
+    {text:"Honda Fit", correct:false},
+    {text:"Peugeot 308 R HYbrid", correct:false},
+    ]
 }, {
     
     question: "Which one is NOT the function of engine oil in car engines?",
+    answers: [
     "correct_answer": "Combustion",
-    "incorrect_answers": ["Lubrication", "Cooling", "Reduce corrosion"]
+    "incorrect_answers": "Lubrication", "Cooling", "Reduce corrosion"
+    {text:}
+    {text:}
 }, {
     
     question: "How much horsepower is produced by the SD40-2 Locomotive?",
+    answers: [
     "correct_answer": "3,000",
-    "incorrect_answers": ["3,200", "2,578", "2,190"]
+    "incorrect_answers": "3,200", "2,578", "2,190"
+    {text:}
+    {text:}
 }, {
    
     question: "Which one of the following is NOT a sub-company of the Volkswagen Group?",
+    answers: [
     "correct_answer": "Opel",
-    "incorrect_answers": ["Porsche", "Bugatti", "Bentley"]
+    "incorrect_answers": "Porsche", "Bugatti", "Bentley"
+    {text:}
+    {text:}
 }, {
    
     question: "Which car tire manufacturer is famous for its Zero line?",
+    answers: [
     "correct_answer": "Pirelli",
-    "incorrect_answers": ["Goodyear", "Bridgestone", "Michelin"]
+    "incorrect_answers": "Goodyear", "Bridgestone", "Michelin"
+    {text:}
+    {text:}
 }, {
    
     question: "When was Cadillac founded?",
+    answers: [
     "correct_answer": "1902",
-    "incorrect_answers": ["1964", "1898", "1985"]
+    "incorrect_answers": "1964", "1898", "1985"
+    {text:}
+    {text:}
 }, {
     
     question: "The LS1 engine is how many cubic inches?",
+    answers: [
     "correct_answer": "346",
-    "incorrect_answers": ["350", "355", "360"]
+    "incorrect_answers": "350", "355", "360"
+    {text:}
+    {text:}
 }, {
     
     question: "The LS3 engine is how many cubic inches?",
+    answers: [
     "correct_answer": "376",
-    "incorrect_answers": ["346", "364", "427"]
+    "incorrect_answers": "346", "364", "427"
+    {text:}
+    {text:}
 }, {
    
     question: "What is the name of Nissans most popular electric car?",
+    answers: [
     "correct_answer": "Leaf",
-    "incorrect_answers": ["Tree", "Deer", "Roots"]
+    "incorrect_answers": "Tree", "Deer", "Roots"
+    {text:}
+    {text:}
 }, {
     
     question: "Which car manufacturer created the Aventador?",
+    answers: [
     "correct_answer": "Lamborghini",
-    "incorrect_answers": ["Ferrari", "Pagani", "Bugatti"]
+    "incorrect_answers": "Ferrari", "Pagani", "Bugatti"
+    {text:}
+    {text:}
 }, {
     
     question: "What is the fastest road legal car in the world?",
+    answers: [
     "correct_answer": "Koenigsegg Agera RS",
-    "incorrect_answers": ["Hennessy Venom GT", "Bugatti Veyron Super Sport", "Pagani Huayra BC"]
+    "incorrect_answers": "Hennessy Venom GT", "Bugatti Veyron Super Sport", "Pagani Huayra BC"
+    {text:}
+    {text:}
 }
 
 ]
