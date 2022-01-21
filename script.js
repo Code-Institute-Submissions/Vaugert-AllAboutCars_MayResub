@@ -1,4 +1,5 @@
 const startButton = document.getElementById('start-btn'); 
+const nextButton = document.getElementById('next.btn');
 const questionContainer = document.getElementById('question-container') ;
 const questionElement = document.getElementById('question');
 const answerButtons = document.getElementById('answer-btn') ;
@@ -19,22 +20,42 @@ function runGame() {
 }
 
 function setNextQuestion() {
+    resetTable()
     showQuestion(randomQuestion[questionIndex])
 }
 
 function showQuestion(question) {
     questionElement.innerText = question.question
-    question.answer
+    question.answers.forEach(answer =>  {
+        const button = document.createElement('button') 
+        button.innerText = answer.text
+        button.classList.add('btn')
+        if (answer.correct) {
+        button.dataset.correct = answer.correct
+        }
+        button.addEventListener('click', checkAnswer)
+        answerButtons.appendChild(button)
+
+    })
+    
 }
 
-function checkAnswer () {
+function resetTable() {
+    
+    while (answerButtons.firstChild) {
+        answerButtons.removeChild
+        (answerButtons.firstChild)
+    }
+}
+
+function checkAnswer (e) {
 
 }
 
 const questions= [
     {
    
-    question: "Where are the cars of the brand Ferrar manufactured?",
+    question: "Where are the cars of the brand Ferrari manufactured?",
     answers: [
     { text: "Italy", correct: true },
     { text: "Romania",   correct: false },
@@ -58,7 +79,7 @@ const questions= [
     answers: [
     {text: "BYD", correct:true},
     {text: "Silant", correct:false },
-    {text:"Dragon", correct:false}
+    {text:"Dragon", correct:false},
     {text:"GAZ" , correct:false}
     ]
 }, {
@@ -111,7 +132,7 @@ const questions= [
     
     question: "Which one is NOT the function of engine oil in car engines?",
     answers: [
-    {text: "Combustion",correct:true }
+    {text: "Combustion",correct:true },
     {text: "Lubrication", correct:false}, 
     {text: "Cooling", correct:false},
     {text: "Reduce corrosion", correct:false}
@@ -121,8 +142,8 @@ const questions= [
     question: "How much horsepower is produced by the SD40-2 Locomotive?",
     answers: [
     {text: "3,000", correct:true},
-    {text: "3,200", correct:false}
-    {text:"2,578" correct:false},
+    {text: "3,200", correct:false},
+    {text:"2,578", correct:false},
     {text:"2,190", correct:false}
     ]
 }, {
@@ -165,7 +186,7 @@ const questions= [
     
     question: "The LS3 engine is how many cubic inches?",
     answers: [
-    {text:"376", correct:true}; 
+    {text:"376", correct:true},
     {text:"346", correct:false},   
     {text:"364", correct:false},
     {text:"427", correct:false}
@@ -196,7 +217,8 @@ const questions= [
     {text:"Hennessy Venom GT", correct:false},   
     {text:"Bugatti Veyron Super Sport", correct:false},
     {text:"Pagani Huayra BC" , correct:false}
-}
+    ]
+    }
 
 ]
 
