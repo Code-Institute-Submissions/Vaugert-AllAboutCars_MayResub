@@ -49,7 +49,7 @@ const questions= [
     {text: "Cherry", correct: true},
     {text: "Sunny",  correct:false },
     {text: "Bluebird", correct:false },
-    {text: "Skyline", correct: false},
+    {text: "Skyline", correct: false}
 ]
 }, {
    
@@ -59,7 +59,7 @@ const questions= [
     {text: "BYD", correct:true},
     {text: "Silant", correct:false },
     {text:"Dragon", correct:false}
-    {text:"GAZ" , correct:false},
+    {text:"GAZ" , correct:false}
     ]
 }, {
     
@@ -68,7 +68,7 @@ const questions= [
     {text: "Austria",correct:true},
     {text: "United States", correct:false}, 
     {text:"Czechia", correct:false },
-    {text: "South Korea", correct:false },
+    {text: "South Korea", correct:false }
     ]
 }, {
    
@@ -77,7 +77,7 @@ const questions= [
     {text: "0.1m", correct:true},
     {text: "10m ", correct:false} ,
     {text: "1m", correct:false},
-    {text: "100m", correct:false},
+    {text: "100m", correct:false}
     ]
 }, {
     
@@ -86,7 +86,7 @@ const questions= [
     {text: "2003", correct:true},
     {text: "2005", correct:false}, 
     {text: "2008", correct:false},
-    {text: "2007", correct:false},
+    {text: "2007", correct:false}
     ]
 }, {
    
@@ -96,7 +96,7 @@ const questions= [
     {text:"E46", correct:true}, 
     {text:"E39", correct:false},
     {text:"E85", correct:false},
-    {text:"F10", correct:false},
+    {text:"F10", correct:false}
     ]
 }, {
     
@@ -105,88 +105,97 @@ const questions= [
     {text:"Toyota Prius", correct:true},
     {text: "Chevrolet Volt", correct:false}, 
     {text:"Honda Fit", correct:false},
-    {text:"Peugeot 308 R HYbrid", correct:false},
+    {text:"Peugeot 308 R HYbrid", correct:false}
     ]
 }, {
     
     question: "Which one is NOT the function of engine oil in car engines?",
     answers: [
-    "correct_answer": "Combustion",
-    "incorrect_answers": "Lubrication", "Cooling", "Reduce corrosion"
-    {text:}
-    {text:}
+    {text: "Combustion",correct:true }
+    {text: "Lubrication", correct:false}, 
+    {text: "Cooling", correct:false},
+    {text: "Reduce corrosion", correct:false}
+    ]
 }, {
     
     question: "How much horsepower is produced by the SD40-2 Locomotive?",
     answers: [
-    "correct_answer": "3,000",
-    "incorrect_answers": "3,200", "2,578", "2,190"
-    {text:}
-    {text:}
+    {text: "3,000", correct:true},
+    {text: "3,200", correct:false}
+    {text:"2,578" correct:false},
+    {text:"2,190", correct:false}
+    ]
 }, {
    
     question: "Which one of the following is NOT a sub-company of the Volkswagen Group?",
     answers: [
-    "correct_answer": "Opel",
-    "incorrect_answers": "Porsche", "Bugatti", "Bentley"
-    {text:}
-    {text:}
+    {text:"Opel", correct:true},
+    {text: "Porsche", correct:false},  
+    {text:"Bugatti", correct:false},
+    {text:"Bentley",correct:false}
+    ]
 }, {
    
     question: "Which car tire manufacturer is famous for its Zero line?",
     answers: [
-    "correct_answer": "Pirelli",
-    "incorrect_answers": "Goodyear", "Bridgestone", "Michelin"
-    {text:}
-    {text:}
+    {text:"Pirelli", correct:true},
+    {text:"Goodyear", correct:false},
+    {text:"Bridgestone", correct:false},
+    {text:"Michelin", correct:false}
+    ]
 }, {
    
     question: "When was Cadillac founded?",
     answers: [
-    "correct_answer": "1902",
-    "incorrect_answers": "1964", "1898", "1985"
-    {text:}
-    {text:}
+    {text: "1902", correct:true},
+    {text: "1964", correct:false},  
+    {text: "1898", correct:false},
+    {text: "1985", correct:false}
+    ]
 }, {
     
     question: "The LS1 engine is how many cubic inches?",
     answers: [
-    "correct_answer": "346",
-    "incorrect_answers": "350", "355", "360"
-    {text:}
-    {text:}
+    {text:"346", correct:true}, 
+    {text:"350", correct:false},   
+    {text:"355", correct:false},
+    {text:"360", correct:false}
+    ]
 }, {
     
     question: "The LS3 engine is how many cubic inches?",
     answers: [
-    "correct_answer": "376",
-    "incorrect_answers": "346", "364", "427"
-    {text:}
-    {text:}
+    {text:"376", correct:true}; 
+    {text:"346", correct:false},   
+    {text:"364", correct:false},
+    {text:"427", correct:false}
+    ]
 }, {
    
     question: "What is the name of Nissans most popular electric car?",
     answers: [
-    "correct_answer": "Leaf",
-    "incorrect_answers": "Tree", "Deer", "Roots"
-    {text:}
-    {text:}
+    {text : "Leaf", correct:true},
+    {text: "Tree", correct:false}, 
+    {text:"Deer", correct:false},
+    {text:"Roots",correct:false}
+    ]
 }, {
     
     question: "Which car manufacturer created the Aventador?",
     answers: [
-    "correct_answer": "Lamborghini",
-    "incorrect_answers": "Ferrari", "Pagani", "Bugatti"
-    {text:}
-    {text:}
+    {text: "Lamborghini", correct:true},
+    {text: "Ferrari", correct:false} , 
+    {text:"Pagani", correct:false},
+    {text:"Bugatti", correct:false}
+    ]
 }, {
     
     question: "What is the fastest road legal car in the world?",
     answers: [
-    "correct_answer": "Koenigsegg Agera RS",
-    "incorrect_answers": "Hennessy Venom GT", "Bugatti Veyron Super Sport", "Pagani Huayra BC"
-    {text:}
-    {text:}
+    {text:"Koenigsegg Agera RS", correct:true}, 
+    {text:"Hennessy Venom GT", correct:false},   
+    {text:"Bugatti Veyron Super Sport", correct:false},
+    {text:"Pagani Huayra BC" , correct:false}
 }
 
 ]
