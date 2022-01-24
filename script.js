@@ -172,7 +172,7 @@ const questions= [
     {text: "Chevrolet Volt", correct:false}, 
     {text:"Honda Fit", correct:false},
     {text:"Toyota Prius", correct:true},
-    {text:"Peugeot 308 R HYbrid", correct:false}
+    {text:"Peugeot 308 R Hybrid", correct:false}
     ]
 }, {
     
