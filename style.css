@@ -89,7 +89,7 @@ body.wrong {
 .btn:hover {
     color: rgb(7, 14, 15);
     border-color: rgba(255, 255, 255, 0.267);
-    background-color: rgb(123, 198, 219);
+    background-color: rgb(34, 73, 199);
 }
 
 .btn.correct {
@@ -174,7 +174,7 @@ body.wrong {
     }
 
     .btn:hover {
-        background-color: rgb(0, 40, 172);
+        background-color: rgb(34, 73, 199);
     }
 
 }

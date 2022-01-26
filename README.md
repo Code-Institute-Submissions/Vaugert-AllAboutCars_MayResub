@@ -1,4 +1,5 @@
 # All About Cars
+![image](https://user-images.githubusercontent.com/95358346/151230675-284e31db-7a16-4e5c-85b4-0dcb10c416a0.png)
 This is a quiz that includes questions about different aspects in the car world.
 ## Features
 
