@@ -47,11 +47,11 @@ body {
 
 
 body.correct { 
-    --hue: var(--hue-correct);
+    color: black;
 }
 
 body.wrong {
-    --hue:var(--hue-wrong)
+    
 }
 
 .main-container {
@@ -89,16 +89,16 @@ body.wrong {
 .btn:hover {
     color: rgb(7, 14, 15);
     border-color: rgba(255, 255, 255, 0.267);
-    background-color: rgb(159, 228, 247);
+    background-color: rgb(123, 198, 219);
 }
 
 .btn.correct {
-    --hue:var(--hue-correct)
+    color: rgb(54, 247, 79);
 
 }
 
 .btn.wrong {
-    --hue:var(--hue-wrong)
+    color: rgba(255, 44, 44, 0.911);
 }
 
 .start-btn { 
@@ -171,6 +171,10 @@ body.wrong {
     #quiz-name {
         font-size: 0.8rem;
         height: 10%;
+    }
+
+    .btn:hover {
+        background-color: rgb(7, 41, 155);
     }
 
 }
