@@ -20,36 +20,36 @@ function runGame() {
     startButton.classList.add('hide')
     randomQuestion = questions.sort(() => Math.random() - 0.5)
     questionIndex = 0
-    questionContainer.classList.remove('hide')
-    setNextQuestion()
+    questionContainer.classList.remove('hide');
+    setNextQuestion();
 
 
 }
 
 function setNextQuestion() {
-    resetTable()
-    showQuestion(randomQuestion[questionIndex])
-}
+    resetTable();
+    showQuestion(randomQuestion[questionIndex]) ;
+};
 
-function showQuestion(question) {
-    questionElement.innerText = question.question
+function showQuestion(question)  {
+    questionElement.innerText = question.question ;
     question.answers.forEach(answer =>  {
         const button = document.createElement('button') 
-        button.innerText = answer.text
+        button.innerText = answer.text 
         button.classList.add('btn')
         if (answer.correct) {
-        button.dataset.correct = answer.correct
+        button.dataset.correct = answer.correct ;
         }
         button.addEventListener('click', checkAnswer)
         answerButtons.appendChild(button)
 
-    })
+    });
     
 }
 
 function resetTable() {
-    clearStatus(document.body)
-    nextButton.classList.add('hide')
+    clearStatus(document.body) 
+    nextButton.classList.add('hide') 
 
     while (answerButtons.firstChild)    
       answerButtons.removeChild
@@ -73,6 +73,7 @@ function checkAnswer (e) {
     } else {
         startButton.innerText='Restart'
         startButton.classList.remove('hide')
+        alert('The game is over, restart to play again :)')
     }
 }
 
@@ -106,17 +107,7 @@ const questions= [
     { text: "Italy", correct: true }
 ]
 }
-, {
-   
-    question: "What was the name of the first front-wheel-drive car produced by Datsun (now Nissan)?",
-    answers: [
-    
-    {text: "Sunny",  correct:false },
-    {text: "Cherry", correct: true},
-    {text: "Bluebird", correct:false },
-    {text: "Skyline", correct: false}
-]
-}, {
+,  {
    
     
     question: "Which of the following is NOT a Russian car manufacturer?",
@@ -127,26 +118,7 @@ const questions= [
     {text:"Dragon", correct:false},
     {text:"GAZ" , correct:false}
     ]
-}, {
-    
-    question: "Which of the following countries has officially banned the civilian use of dash cams in cars?",
-    answers: [
-    {text: "Austria",correct:true},
-    {text: "United States", correct:false}, 
-    {text:"Czechia", correct:false },
-    {text: "South Korea", correct:false }
-    ]
-}, {
-   
-    question: "The difference between the lengths of a Boeing 777-300ER and an Airbus A350-1000 is closest to:",
-    answers: [
-    
-    {text: "10m ", correct:false} ,
-    {text: "1m", correct:false},
-    {text: "0.1m", correct:true},
-    {text: "100m", correct:false}
-    ]
-}, {
+},  {
     
     question: "When was Tesla founded?",
     answers: [
