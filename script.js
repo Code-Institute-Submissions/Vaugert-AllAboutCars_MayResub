@@ -3,6 +3,7 @@ const nextButton = document.getElementById('next-btn');
 const questionContainer = document.getElementById('question-container') ;
 const questionElement = document.getElementById('question');
 const answerButtons = document.getElementById('answer-btn') ;
+const rulesSection = document.getElementById('rules') ;
 
 let randomQuestion, questionIndex
 
@@ -14,7 +15,8 @@ nextButton.addEventListener('click', () => {
 })
 
 function runGame() {
-    
+
+    rulesSection.classList.add('hide')
     startButton.classList.add('hide')
     randomQuestion = questions.sort(() => Math.random() - 0.5)
     questionIndex = 0
