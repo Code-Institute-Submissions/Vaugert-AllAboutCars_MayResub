@@ -14,6 +14,8 @@ nextButton.addEventListener('click', () => {
 
 })
 
+/* Starts the game, hides the rules section and shows the question container, pulls out a random question*/
+
 function runGame() {
 
     rulesSection.classList.add('hide')
@@ -25,6 +27,8 @@ function runGame() {
 
 
 }
+
+/*Sets up the next question*/
 
 function setNextQuestion() {
     resetTable();
@@ -47,6 +51,8 @@ function showQuestion(question)  {
     
 }
 
+/*resets the table, removes the right or wrong answer from the last question*/
+
 function resetTable() {
     clearStatus(document.body) 
     nextButton.classList.add('hide') 
@@ -59,6 +65,8 @@ function resetTable() {
         
 }
 
+
+/*---------checks if user input is correct and reveals next button when input ismade. checks if the game is over*/
 
 
 function checkAnswer (e) {
@@ -93,6 +101,7 @@ function clearStatus (element) {
 
 }
 
+/*-----------------Questions*/
 
 
 const questions= [
